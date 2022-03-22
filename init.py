@@ -9,10 +9,10 @@ import os
 config = dotenv_values(".env")
 
 def fetch_data():
-  x = input('Quantidade de dados: ')
-  res = requests.get('https://randomuser.me/api/?results={}'.format(x))
+  x = input('Enter your url here: ')
+  res = requests.get(x)
   return json.loads(res.text)
-  
+    
 def write_archive():
   response = fetch_data()
   name_file = random().__floor__()
@@ -27,7 +27,7 @@ async def timer():
   while True:
     file = write_archive()
     await channel.send('@everyone', file=discord.File(file))
-    await asyncio.sleep(10) #seconds
+    await asyncio.sleep(float(config.get('TIMESC'))) #seconds
     
     if os.path.exists(file):
       os.remove(file)

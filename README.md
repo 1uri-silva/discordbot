@@ -13,7 +13,7 @@
 
 - Time de execução 10800000ms millisecond) -> (10800s (second) -> 180min (minute) -> 3h (hour)
 
-<!-- ![screen](screen/screen-shot.png) -->
+![screen](screen/screen-shot.png)
 
 ## 🚀 Instalando discordbot
 
@@ -34,7 +34,7 @@ Para usar discordbot, siga estas etapas:
 
 - crie um app (bot) https://discordjs.guide/preparations/setting-up-a-bot-application.html
 
-- adicione as variaveis de token em seu .env
+- adicione as variáveis de token em seu .env
 
 - adicione o bot ao seu servidor https://docs.discord4j.com/discord-application-tutorial
   
