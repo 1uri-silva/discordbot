@@ -9,9 +9,7 @@
 
 - Envia o arquivo para o server do canal que passou
 
-- Exclui o arquivo
-
-- Time de execução 10800000ms millisecond) -> (10800s (second) -> 180min (minute) -> 3h (hour)
+- Time de execução 10s (second)
 
 ![screen](screen/screen-shot.png)
 
@@ -20,7 +18,7 @@
 ```
 - git clone https://github.com/rd-easy/discordbot.git
 
-- pipe3 install requirements.txt
+- pip3 install requirements.txt
 
 - python3 init.py
 ```
